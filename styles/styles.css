@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'diner';
-  src: url('../fonts/FontdinerdotcomLuvable.ttf');
+  src: url('/fonts/FontdinerdotcomLuvable.ttf');
 }
 
 @font-face {
   font-family: 'valentine';
-  src: url('../fonts/Lovely\ Valentine\ Free.otf');
+  src: url('/fonts/Lovely\ Valentine\ Free.otf');
 }
 
 h1 {
