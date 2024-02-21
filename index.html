@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Empezemos de 0</title>
+</head>
+<body>
+
+  <div id="primary-content" class="centered-pen">
+    <h1 class="display-3">Hello there!</h1>
+    <p class="lead">Meet Felix, your new personal assistant with an outstanding personality!</p>
+    <div class="personal-assistant">
+      <div id="felix" class="felix" onclick="activateFelix();">
+        <div class="eyes">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+      </div>
+      <div class="platform"></div>
+      <ul class="command-list">
+        <li><i class="far fa-clouds" onclick="getWeather();"></i></li>
+        <li><i class="far fa-clock" onclick="getTime();"></i></li>
+        <li><i class="far fa-calendar-alt" onclick="getDate();"></i></li>
+        <li><i class="far fa-grin-squint-tears" onclick="tellJoke();"></i></li>
+        <li><i class="far fa-search" onclick="searchGoogle();"></i></li>
+        <li><i class="far fa-lightbulb-on" onclick="showInspiration();"></i></li>
+        <p class="hey-felix lead"></p>
+      </ul>
+    </div>
+    <div id="response-frame" class="response-frame">
+      <p id="response-message" class="lead"></p>
+      <i class="fas fa-times" onclick="closeResponse();"></i>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
