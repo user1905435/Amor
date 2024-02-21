@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'diner';
+  src: url('../fonts/FontdinerdotcomLuvable.ttf');
+}
+
+@font-face {
+  font-family: 'valentine';
+  src: url('../fonts/Lovely\ Valentine\ Free.otf');
+}
+
+h1 {
+	font-family: 'diner';
+	letter-spacing: 4px;
+	font-size: 3.5em;
+	/* font-variant: ; */
+}
+
+p {
+	font-family: 'valentine';
+	/* letter-spacing: 4px; */
+	font-size: 2.5em;
+	/* font-variant: ; */
+}
+
+
 .centered-pen{
 	display: flex;
 	justify-content: center;
@@ -216,11 +241,13 @@
 .display-3{
 	z-index: 1000;
 	text-align: center;
+	margin: 0;
 }
 
 .lead{
 	z-index: 1000;
 	text-align: center;
+	margin: 0;
 }
 
 .response-frame > .lead {
