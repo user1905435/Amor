@@ -200,7 +200,17 @@
 	z-index: 1000;
 	opacity: 1;
 }
+
+.display-3{
+	text-align: center;
+}
+
+.lead{
+	text-align: center;
+}
+
 .response-frame > .lead {
+	text-align: center;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 5px;
