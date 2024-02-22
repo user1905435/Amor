@@ -358,9 +358,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-	background: rgb(22, 9, 56);
+	/* background: rgb(22, 9, 56);
 	background-image: linear-gradient(to top, rgb(22, 9, 56), rgb(24, 12, 58), rgb(26, 14, 60), rgb(27, 17, 62), rgb(29, 19, 64), rgb(31, 22, 66), rgb(33, 24, 67), rgb(35, 27, 69), rgb(37, 29, 71), rgb(38, 32, 73), rgb(40, 34, 75), rgb(42, 37, 77));
-	background-image: -webkit-linear-gradient(to top, rgb(22, 9, 56), rgb(24, 12, 58), rgb(26, 14, 60), rgb(27, 17, 62), rgb(29, 19, 64), rgb(31, 22, 66), rgb(33, 24, 67), rgb(35, 27, 69), rgb(37, 29, 71), rgb(38, 32, 73), rgb(40, 34, 75), rgb(42, 37, 77));
+	background-image: -webkit-linear-gradient(to top, rgb(22, 9, 56), rgb(24, 12, 58), rgb(26, 14, 60), rgb(27, 17, 62), rgb(29, 19, 64), rgb(31, 22, 66), rgb(33, 24, 67), rgb(35, 27, 69), rgb(37, 29, 71), rgb(38, 32, 73), rgb(40, 34, 75), rgb(42, 37, 77)); */
 	color: #fff;
 	overflow: hidden;
 }
@@ -454,4 +454,17 @@ canvas{
 	width: 100%;
 	height: 100%;
 	font-size: 1rem;
+}
+
+.question--container {
+	position: absolute;
+	display: none;
+	background: rgba(0,0,0,0.4);
+	backdrop-filter: blur(7px);
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }

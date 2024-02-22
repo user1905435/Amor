@@ -68,8 +68,9 @@ function searchGoogle() {
 	window.open("https://www.google.com/", "_blank");
 }
 function showInspiration() {
-	deactivateFelix();
-	window.open("https://dribbble.com/shots/5473987-AI-Robot", "_blank");
+  $(".question--container").fadeIn(1000).css("display", "flex");
+	// deactivateFelix();
+	// window.open("https://dribbble.com/shots/5473987-AI-Robot", "_blank");
 }
 function showResponse() {
 	responseFrame.classList.add("active");

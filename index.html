@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/letter.css">
+  <link rel="stylesheet" href="styles/girldfriend.css">
+  <!-- <script src="https://feeldreams.github.io/hayoloh/script.js"></script> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/959bfd713f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-  crossorigin="anonymous" />
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <title>Empezemos de 0</title>
 </head>
+
 <body>
   <div id="primary-content" class="centered-pen">
     <h1 class="display-3">Hola Milena!</h1>
@@ -44,17 +50,17 @@
   </div>
   <canvas id="canv"></canvas>
   <div class="sky">
-   <div class="clouds">
-     <div class="c1 one"></div>
-     <div class="c1 two"></div>
-     <div class="c1 three"></div>
-     <div class="c1 four"></div>
-     <div class="c2 one"></div>
-     <div class="c2 two"></div>
-     <div class="c2 three"></div>
-     <div class="c2 four"></div>
-   </div>
- </div>
+    <div class="clouds">
+      <div class="c1 one"></div>
+      <div class="c1 two"></div>
+      <div class="c1 three"></div>
+      <div class="c1 four"></div>
+      <div class="c2 one"></div>
+      <div class="c2 two"></div>
+      <div class="c2 three"></div>
+      <div class="c2 four"></div>
+    </div>
+  </div>
 
   <div class="scissors">
     <div class="envelop">
@@ -69,21 +75,27 @@
             <div class="note__text">
               <p>Hola Mile,
 
-                Sé que hemos pasado por mucho juntos, no todo ha sido fácil. Hemos tenido nuestros buenos momentos, claro, pero también nos hemos enfrentado a desafíos que nunca imaginamos. Quiero que sepas que, aunque a veces solo parezcan palabras, realmente siento que tenemos mucho más por vivir juntos.
-                </p>
+                Sé que hemos pasado por mucho juntos, no todo ha sido fácil. Hemos tenido nuestros buenos momentos,
+                claro, pero también nos hemos enfrentado a desafíos que nunca imaginamos. Quiero que sepas que, aunque a
+                veces solo parezcan palabras, realmente siento que tenemos mucho más por vivir juntos.
+              </p>
             </div>
           </div>
           <div class="note js-note">
             <div class="note__text">
               <p>Estoy seguro de querer hacerlo contigo.
 
-                Últimamente, he estado pensando mucho sobre nosotros, sobre todo lo que hemos vivido. Y quiero que sepas algo importante: NO VOY A RENDIRME!! Estoy aquí, comprometido a hacer lo que sea necesario para que las cosas entre nosotros funcionen mejor.</p>
+                Últimamente, he estado pensando mucho sobre nosotros, sobre todo lo que hemos vivido. Y quiero que sepas
+                algo importante: NO VOY A RENDIRME!! Estoy aquí, comprometido a hacer lo que sea necesario para que las
+                cosas entre nosotros funcionen mejor.</p>
             </div>
           </div>
           <div class="note js-note">
             <div class="note__text">
               <p>
-                Estoy comprometido al 100% contigo. Esto no son solo palabras, son sentimientos, y no voy a "cagarla mas" voy a hacerte entender que soy esa persona que buscas, que lo que nos a pasado solo es un bache en el camino, pero que juntos podemos superar futuros. Te amo Mile, y no quiero perderte.
+                Estoy comprometido al 100% contigo. Esto no son solo palabras, son sentimientos, y no voy a "cagarla
+                mas" voy a hacerte entender que soy esa persona que buscas, que lo que nos a pasado solo es un bache en
+                el camino, pero que juntos podemos superar futuros. Te amo Mile, y no quiero perderte.
               </p>
             </div>
           </div>
@@ -92,7 +104,83 @@
     </div>
   </div>
 
+  <div class="question--container animate__animated animate__fadeInDown">
+    <!-- Ganti Audio di sini --><audio id="linkmp3">https://user1905435.github.io/love-mile/src/yes/music.mp3</audio>
+
+    <div id="bodyblur">
+      <img src="https://unamglobal.unam.mx/wp-content/uploads/2023/09/destacada-enamoramiento-o-amor.jpg"
+        id="wallpaper" />
+    </div>
+
+    <div id='Content'>
+
+      <div id="suratin" onClick="memulai();audio.play();">
+        <img src="https://rayyscoding.github.io/envelope.png" />
+      </div>
+      <p id="ket">Hola Milena, dale click a la carta!</p>
+
+      <div>
+        <blockquote id='bq'>
+          <div>
+            <!-- Stiker untuk Konten -->
+            <img src="https://feeldreams.github.io/bunga.gif" id="fotoakhir" />
+            <img src="https://feeldreams.github.io/peach1.gif" id="fotoakhir2" />
+            <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir3" />
+          </div>
+
+          <!-- Konten Pertanyaan -->
+          <p id="kalimat">¿Quieres ser mi novia? 🤭❤️</p>
+          <p id="kalimatb"></p>
+          <p id="kalimatc"></p>
+
+          <!-- Konten Jawaban -->
+          <p id="kalimat2">Sí!! 😆</p>
+          <p id="kalimatb2">Ahora, eres mi novia ❤️</p>
+          <p id="kalimatc2">EYY.. 🏃 Pero vamos a romper, en : <b id="ctimer" style="font-size:24px">7</b></p>
+
+          <!-- Konten Jawaban 2 -->
+          <p id="kalimat3">Sólo bromeaba 😜</p>
+          <p id="kalimatb3">Ahora eres realmente mi novia 🤣❤️</p>
+          <p id="kalimatc3">📅 </p>
+        </blockquote>
+      </div>
+
+      <!-- Tombol Multifungsi -->
+      <div id="Tombol">
+        <a id="By" onClick="multifungsi()">
+          <b id="tmbl">Si!</b>
+        </a>
+
+        <a id="Bn" onClick="ditolak()">No!</a><a id="Bn2" onClick="ditolak2()"></a>
+      </div>
+
+    </div>
+  </div>
+
   <!-- <script src="js/app.js"></script> -->
+
+  <script>
+
+    ftom = 0; jikapr = 1; ftganti = 0; flag = 1; flagg = 1; fungsi = 0; Bn2.innerHTML = Bn.innerHTML; function showDiv() { pesanwhatsapp = "Mile y Deivid ahora son novios! Se van a cuidar siempre, y van a intentar no tener ningun roze mas, y si lo tienen, se arreglara!"; Bn2.style.display = "none"; Content.style = "opacity:1;margin-top:15vh;"; ket.style = "margin-top:30px"; }
+    function memulai() { suratin.style = "transition:all 1s ease;transform:scale(.1);opacity:0"; ket.style = "transition:all 1s ease;transform:scale(.1);opacity:0"; setTimeout(mulaikonten, 300) }
+    function mulaikonten() { otomatis(); suratin.style = "display:none"; ket.style = "display:none"; Content.style = "opacity:1;margin-top:4vh"; bodyblur.style = "opacity:.6;animation:none"; wallpaper.style = "transform: scale(2);opacity:1;"; fotoakhir.style = "display:inline-flex;"; setTimeout(ftmuncul, 200); bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);border-radius:var(--bingkai);margin-top:0"; fungsi = 1; setTimeout(tombol, 500); }
+
+    function ftmuncul() {
+      if (ftganti == 0) { fotoakhir.style = "display:inline-flex;opacity:1;transform:scale(1)"; }
+      if (ftganti == 1) { fotoakhir.src = fotoakhir2.src; fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);"; }
+      if (ftganti == 2) { fotoakhir.src = fotoakhir3.src; fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);"; }
+    }
+    function fthilang() { fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)"; }
+    function jjfoto() { fotoakhir.style.animation = "rto .8s infinite alternate"; }
+
+    function tombol() { Tombol.style = "opacity:1;transform: scale(1);"; Bn.style = "margin:12px 0 12px 12px"; ftom = 1; }
+    function multifungsi() { if (ftom == 1) { diterima(); } if (ftom == 5) { menuju(); } }
+    async function menuju() { await swals.fire('OK!', 'Send Me a message okay!', 'success'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp; Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);"; } setTimeout(showDiv, 100);
+
+    const swalst = Swal.mixin({ timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100, }); audio = new Audio('' + linkmp3.innerHTML); const swals = Swal.mixin({ allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100, }); const style = document.createElement('style'); var today = new Date(); var dd = String(today.getDate()).padStart(2, '0'); var mm = String(today.getMonth() + 1).padStart(2, '0'); var yyyy = today.getFullYear(); const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+    const body = document.querySelector("body"); function createHeart() { const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart); } setInterval(function name(params) { var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) { heartArr[0].remove() } }, 100);
+
+  </script>
 
   <script src="js/sections.js"></script>
   <script src="js/app.js"></script>
@@ -100,4 +188,5 @@
   <script src="js/birds.js"></script>
   <script src="js/letter.js"></script>
 </body>
+
 </html>
