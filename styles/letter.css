@@ -233,4 +233,5 @@ body {
 .note__text p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000;
+  font-size: .9rem !important;
 }
