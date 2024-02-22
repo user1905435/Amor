@@ -8,15 +8,17 @@ var felix = document.getElementById("felix");
 var responseFrame = document.getElementById("response-frame");
 var responseMessage = document.getElementById("response-message");
 var userMadeDecision = false;
-var jokes = [
-	'I ate a clock yesterday, it was very time-consuming.',
-	'A perfectionist walked into a bar…apparently, the bar wasn’t set high enough.',
-	'Employee of the month is a good example of how somebody can be both a winner and a loser at the same time.',
-	'I don’t have a girlfriend, but I know a girl that would get really mad if she heard me say that.',
-	'Relationships are great, but have you ever had stuffed crust pizza?',
-	'The worst time to have a heart attack is during a game of charades.',
-	'My therapist says I have a preoccupation with vengeance. We’ll see about that.',
-	'I have a friend. He keeps trying to convince me he’s a compulsive liar, but I don’t believe him.'
+var funny = [
+	'¿Cuál es el café más peligroso del mundo? El ex-preso.',
+	'¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.',
+	'¿Qué le dice una iguana a su hermana gemela? Iguanita.',
+	'¿Cuál es el animal más antiguo? La cebra, porque está en blanco y negro.',
+	'¿Qué hace una abeja en el gimnasio? Zumba.',
+	'¿Por qué el libro de matemáticas estaba triste? Porque tenía muchos problemas.',
+	'¿Cómo se despiden los químicos? Ácido un placer.',
+	'¿Cuál es el pez más divertido? El pez payaso.',
+	'¿Qué le dice un jardinero a otro? Nos vemos en la poda próxima.',
+	'¿Cómo se llama el campeón de buceo japonés? Tokofondo. ¿Y el subcampeón? Kasitoko.'
 ];
 
 // Activate felix and set timeout for awaiting a command.
@@ -49,15 +51,18 @@ function getWeather() {
 	setTimeout(function() {
 		$(".personal-assistant").css("margin-top", "100px");
 		$("#tooltipmsg").fadeIn(1000).css("display", "none");
-	}, 7000);
+	}, 30000);
 	// responseMessage.innerText = "The weather really just kind of sucks here, and I know you wanted the weather at your location, but that's life for you.";
 	// showResponse();
 }
 function getTime() {
-	var today = new Date();
-	var time = today.getHours() + ":" + today.getMinutes();
-	responseMessage.innerText = "Perhaps it's time for you to get a watch? I'm just kidding... No. Really... It's " + time + ".";
-	showResponse();
+	$(".personal-assistant").css("margin-top", "0px");
+	$("#tooltipchivato").fadeIn(1000).css("display", "flex");
+
+	setTimeout(function() {
+		$(".personal-assistant").css("margin-top", "100px");
+		$("#tooltipchivato").fadeIn(1000).css("display", "none");
+	}, 7000);
 }
 function getDate() {
 	var today = new Date();
@@ -70,7 +75,7 @@ function tellJoke() {
 	var time = today.getHours() + ":" + today.getMinutes();
 	$(".personal-assistant").css("margin-top", "0px");
 	$("#tooltipdate").fadeIn(1000).css("display", "flex");
-	console.log(today.getDate(), today.getDay(), today.getFullYear() ,time);
+	// console.log(today.getDate(), today.getDay(), today.getFullYear() ,time);
 	document.getElementById("tooltipdate").innerText = today.getDate() + "/" +today.getDay()+ "/" + today.getFullYear()+ " " +time;
 	// $("#tooltipdate").innerText = today.getDate(), today.getDay(), today.getFullYear() ,time;
 
@@ -83,8 +88,14 @@ function tellJoke() {
 	// showResponse();
 }
 function searchGoogle() {
-	deactivateFelix();
-	window.open("https://www.google.com/", "_blank");
+	$(".personal-assistant").css("margin-top", "0px");
+	$("#tooltipfunny").fadeIn(1000).css("display", "flex");
+	document.getElementById("tooltipfunny").innerText = funny[Math.floor(Math.random() * funny.length)];
+
+	setTimeout(function() {
+		$(".personal-assistant").css("margin-top", "100px");
+		$("#tooltipfunny").fadeIn(1000).css("display", "none");
+	}, 7000);
 }
 function showInspiration() {
   $(".question--container").fadeIn(1000).css("display", "flex");
