@@ -224,7 +224,7 @@ blockquote img {
   transform: scale(.1);
 }
 
-p {
+#Content p, blockquote p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
