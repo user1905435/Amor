@@ -15,6 +15,8 @@ function getLetter() {
 }
 
 
+
+
 function otomatis() { befanimkata(); setTimeout(animkata, 400); }
 function befanimkata() { kalimat.style = "transform:scale(.3);"; kalimatb.style = "transform:scale(.3);"; kalimatc.style = "transform:scale(.3);"; }
 function animkata() { kalimat.style = "transform:scale(1);"; kalimatb.style = "transform:scale(1);"; kalimatc.style = "transform:scale(1);"; }

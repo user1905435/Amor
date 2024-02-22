@@ -43,8 +43,15 @@ function deactivateFelix() {
 	}, 750);
 }
 function getWeather() {
-	responseMessage.innerText = "The weather really just kind of sucks here, and I know you wanted the weather at your location, but that's life for you.";
-	showResponse();
+	$(".personal-assistant").css("margin-top", "0px");
+	$("#tooltipmsg").fadeIn(1000).css("display", "flex");
+
+	setTimeout(function() {
+		$(".personal-assistant").css("margin-top", "100px");
+		$("#tooltipmsg").fadeIn(1000).css("display", "none");
+	}, 7000);
+	// responseMessage.innerText = "The weather really just kind of sucks here, and I know you wanted the weather at your location, but that's life for you.";
+	// showResponse();
 }
 function getTime() {
 	var today = new Date();
@@ -59,9 +66,21 @@ function getDate() {
 	showResponse();
 }
 function tellJoke() {
-	var index = Math.floor((Math.random() * jokes.length) - 1);
-	responseMessage.innerText = jokes[index];
-	showResponse();
+	var today = new Date();
+	var time = today.getHours() + ":" + today.getMinutes();
+	$(".personal-assistant").css("margin-top", "0px");
+	$("#tooltipdate").fadeIn(1000).css("display", "flex");
+	console.log(today.getDate(), today.getDay(), today.getFullYear() ,time);
+	document.getElementById("tooltipdate").innerText = today.getDate() + "/" +today.getDay()+ "/" + today.getFullYear()+ " " +time;
+	// $("#tooltipdate").innerText = today.getDate(), today.getDay(), today.getFullYear() ,time;
+
+	setTimeout(function() {
+		$(".personal-assistant").css("margin-top", "100px");
+		$("#tooltipdate").fadeIn(1000).css("display", "none");
+	}, 7000);
+	// var index = Math.floor((Math.random() * jokes.length) - 1);
+	// responseMessage.innerText = jokes[index];
+	// showResponse();
 }
 function searchGoogle() {
 	deactivateFelix();

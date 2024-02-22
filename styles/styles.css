@@ -188,17 +188,17 @@ p {
 }
 .command-list > li:hover > i { color: #5cf; }
 .command-list > li:nth-child(1) { transform: translateX(100px) translateY(45px); }
-.command-list > li:nth-child(1):hover ~ .hey-felix::after { content: "Hey Felix, how's the weather?"; }
+/* .command-list > li:nth-child(1):hover ~ .hey-felix::after { content: "Hey Felix, how's the weather?"; } */
 .command-list > li:nth-child(2) { transform: translateX(-15px) translateY(-15px); }
-.command-list > li:nth-child(2):hover ~ .hey-felix::after { content: "Hey Felix, what time is it?"; }
+/* .command-list > li:nth-child(2):hover ~ .hey-felix::after { content: "Hey Felix, what time is it?"; } */
 .command-list > li:nth-child(3) { transform: translateX(-35px) translateY(-55px); }
-.command-list > li:nth-child(3):hover ~ .hey-felix::after { content: "Carta para milena"; }
+/* .command-list > li:nth-child(3):hover ~ .hey-felix::after { content: "Carta para milena"; } */
 .command-list > li:nth-child(4) { transform: translateX(35px) translateY(-55px); }
-.command-list > li:nth-child(4):hover ~ .hey-felix::after { content: "Hey Felix, tell me a joke."; }
+/* .command-list > li:nth-child(4):hover ~ .hey-felix::after { content: "Hey Felix, tell me a joke."; } */
 .command-list > li:nth-child(5) { transform: translateX(15px) translateY(-15px); }
-.command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "Hey Felix..."; }
+/* .command-list > li:nth-child(5):hover ~ .hey-felix::after { content: "Hey Felix..."; } */
 .command-list > li:nth-child(6) { transform: translateX(-100px) translateY(45px); }
-.command-list > li:nth-child(6):hover ~ .hey-felix::after { content: "Hey Felix, what inspires you?"; }
+/* .command-list > li:nth-child(6):hover ~ .hey-felix::after { content: "Hey Felix, what inspires you?"; } */
 
 /* Hey Felix */
 .hey-felix {
@@ -468,3 +468,28 @@ canvas{
 	width: 100%;
 	height: 100%;
 }
+
+.tooltip {
+	display: none;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(7px);
+	font-size: 0.8rem;
+	padding: 1vh 2vh;
+	margin: 0 auto;
+	border-radius: 15px;
+	z-index: 9990;
+	margin-bottom: 67px;
+
+}
+
+/* .tooltip::before {
+	content: '';
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: black;
+	transform: translateX(-50%);
+} */
